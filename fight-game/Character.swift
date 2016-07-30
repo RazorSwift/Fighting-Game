@@ -14,9 +14,10 @@ class Character {
     private var _attackPower: Int
     private var _name: String?
     
-    init(hp: Int, attackPower: Int) {
+    init(hp: Int, attackPower: Int, name: String) {
         self._hp = hp
         self._attackPower = attackPower
+        self._name = name
     }
     
 }
