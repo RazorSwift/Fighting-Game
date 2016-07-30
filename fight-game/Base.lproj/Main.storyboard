@@ -1,26 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="fight_game" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="0Ke-zt-me1">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0Ke-zt-me1" secondAttribute="height" multiplier="5:7" id="aIb-AT-Nb8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="I6M-UC-v3g">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="z25-qp-kpb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text-holder" translatesAutoresizingMaskIntoConstraints="NO" id="0tC-HW-47C">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Mik-dp-xBW"/>
+                                    <constraint firstAttribute="width" constant="292" id="aNK-2S-377"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="fq9-pU-Af0" userLabel="player1">
+                                <frame key="frameInset" minX="-111" minY="383" width="452" height="241"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Ke-zt-me1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2of-oc-D8c"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="I6M-UC-v3g" secondAttribute="bottom" id="AjK-qn-B1y"/>
+                            <constraint firstItem="0Ke-zt-me1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CWn-YT-TPC"/>
+                            <constraint firstItem="I6M-UC-v3g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DPQ-sH-6Cm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0tC-HW-47C" secondAttribute="bottom" constant="12" id="EpV-nc-Usq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0Ke-zt-me1" secondAttribute="bottom" id="Xvf-vN-LJz"/>
+                            <constraint firstAttribute="trailing" secondItem="I6M-UC-v3g" secondAttribute="trailing" id="doC-8c-Er0"/>
+                            <constraint firstAttribute="trailing" secondItem="0Ke-zt-me1" secondAttribute="trailing" id="wNu-ob-spX"/>
+                            <constraint firstItem="0tC-HW-47C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="woo-2M-gL3"/>
+                        </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="500" height="700"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.59999999999999" y="136.73163418290855"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="1024" height="677"/>
+        <image name="enemy" width="241" height="348"/>
+        <image name="ground" width="1024" height="106"/>
+        <image name="text-holder" width="696" height="106"/>
+    </resources>
 </document>
