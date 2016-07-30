@@ -47,14 +47,20 @@
                                     <constraint firstAttribute="width" secondItem="LGH-BW-L9r" secondAttribute="height" multiplier="58:63" id="4jm-tD-9oU"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="236-Wi-BAk">
-                                <frame key="frameInset" minX="26" minY="28" width="212" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="236-Wi-BAk" userLabel="button1">
+                                <frame key="frameInset" minX="26" minY="28" width="163" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="vzf-FZ-9Ps"/>
+                                    <constraint firstAttribute="height" constant="60" id="zfH-aG-4hW"/>
+                                </constraints>
                                 <state key="normal" image="player1attackbtn"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXB-Hb-9JP">
-                                <frame key="frameInset" minX="260" minY="28" width="212" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXB-Hb-9JP" userLabel="button2">
+                                <frame key="frameInset" minX="309" minY="28" width="163" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="NMZ-vP-Oxk"/>
+                                    <constraint firstAttribute="height" constant="60" id="axi-Cf-gWB"/>
+                                </constraints>
                                 <state key="normal" image="player2attackbtn"/>
                             </button>
                         </subviews>
@@ -66,13 +72,17 @@
                             <constraint firstItem="I6M-UC-v3g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DPQ-sH-6Cm"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0tC-HW-47C" secondAttribute="bottom" constant="12" id="EpV-nc-Usq"/>
                             <constraint firstItem="XG4-k2-ZLZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="GT3-32-12s"/>
+                            <constraint firstItem="UXB-Hb-9JP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="JkS-oB-E9f"/>
                             <constraint firstItem="LGH-BW-L9r" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="Whz-EU-IW5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0Ke-zt-me1" secondAttribute="bottom" id="Xvf-vN-LJz"/>
                             <constraint firstAttribute="trailing" secondItem="LGH-BW-L9r" secondAttribute="trailing" constant="25" id="bw2-X1-pI8"/>
+                            <constraint firstAttribute="trailing" secondItem="UXB-Hb-9JP" secondAttribute="trailing" constant="8" id="cIY-pR-Trd"/>
                             <constraint firstAttribute="trailing" secondItem="I6M-UC-v3g" secondAttribute="trailing" id="doC-8c-Er0"/>
                             <constraint firstItem="I6M-UC-v3g" firstAttribute="top" secondItem="LGH-BW-L9r" secondAttribute="bottom" id="ix8-Pq-21G"/>
                             <constraint firstItem="I6M-UC-v3g" firstAttribute="top" secondItem="XG4-k2-ZLZ" secondAttribute="bottom" id="kfg-8Y-5Mo"/>
+                            <constraint firstItem="236-Wi-BAk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="rG4-pc-x7b"/>
                             <constraint firstItem="XG4-k2-ZLZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="ssd-qt-kpm"/>
+                            <constraint firstItem="236-Wi-BAk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="uOc-hv-c1i"/>
                             <constraint firstAttribute="trailing" secondItem="0Ke-zt-me1" secondAttribute="trailing" id="wNu-ob-spX"/>
                             <constraint firstItem="0tC-HW-47C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="woo-2M-gL3"/>
                         </constraints>
